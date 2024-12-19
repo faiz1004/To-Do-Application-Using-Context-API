@@ -1,0 +1,42 @@
+/* Add Todo Section */
+.add-todo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px;
+    margin-right: 10px;
+    font-size: 1rem;
+    background-color: #fefefe; /* White background */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-box:focus {
+    outline: none;
+    border-color: #4caf50; /* Green focus */
+    box-shadow: 0 0 6px rgba(76, 175, 80, 0.5);
+  }
+  
+  .add-btn {
+    padding: 10px 25px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  

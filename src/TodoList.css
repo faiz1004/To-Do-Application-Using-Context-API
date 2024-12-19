@@ -1,0 +1,59 @@
+/* Todo List */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff; /* White background */
+    transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .todo-item:hover {
+    transform: scale(1.02);
+    background-color: #f7f7f7; /* Slight gray on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .todo-item.completed {
+    background-color: #d4edda; /* Light green for completed */
+    border-color: #28a745;
+  }
+  
+  .todo-item.completed .todo-text {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .todo-text {
+    cursor: pointer;
+    font-size: 1.1rem;
+    flex: 1;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    padding: 8px 15px;
+    background-color: #f44336; /* Red */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+  }
+  
